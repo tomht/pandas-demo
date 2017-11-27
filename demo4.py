@@ -14,7 +14,7 @@ print(berri_bikes.index.weekday)
 
 # We can set the weekday as an additional column in the data.
 
-berri_bikes['weekday'] = berri_bikes.index.weekday
+berri_bikes = berri_bikes.assign(weekday=berri_bikes.index.weekday)
 
 # Then we can do some aggregation on the weekday column.
 
